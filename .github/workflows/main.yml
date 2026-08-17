@@ -7,7 +7,7 @@
     license-key: {{DIFFBLUE_LICENSE}}
     # The access token used to push commits and call GitHub APIs.
 Must have access to the project with at least Write role, and scopes including code, commit-statuses, pull-requests, workflows and actions.
-    access-token: {{GITHUB_TOKEN}}
+    access-token: {{TOKEN}}
     # The Diffblue Cover commands and options to use.
     args: # optional, default is ci activate build validate create
     # Working directory where the project can be found, if not at the root.
