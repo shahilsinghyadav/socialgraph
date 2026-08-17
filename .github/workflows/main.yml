@@ -16,4 +16,4 @@ jobs:
         uses: diffblue/cover-github-action@v2024.04.01
         with:
           license-key: ${{ secrets.DIFFBLUE_LICENSE }}
-          access-token: ${{ secrets.GITHUB_TOKEN }}
+          access-token: ${{ secrets.TOKEN }}
