@@ -1,5 +1,4 @@
 name: Diffblue Cover
-
 on:
   pull_request:
     branches:
