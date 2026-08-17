@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d978ef2e-9bd5-4b06-a549-ea3d8c6556f1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Security Analysis" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3HX3GwrO3RMleWozYC4wTOWiiFN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Diffblue Cover.Write tests for class SocialGraph.executor": "Run",
+    "JUnit.MathUtilsDiffblueTest.executor": "Run",
+    "JUnit.MathUtilsDiffblueTest.testAddTwoAndThree.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/ssinghyadav/Downloads/Projects/Intellij/untitled/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.MathUtilsDiffblueTest.testAddTwoAndThree">
+    <configuration name="MathUtilsDiffblueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MathUtilsDiffblueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathUtilsDiffblueTest.testAddTwoAndThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MathUtilsDiffblueTest" />
+      <option name="METHOD_NAME" value="testAddTwoAndThree" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (1)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" temporary="true">
+      <settings run-config-name="Unnamed (1)" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" temporary="true">
+      <settings run-config-name="Unnamed" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class Calculator" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="untitled" />
+      <settings run-config-name="Write tests for class Calculator" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="org.example.Calculator" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class Main" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="untitled" />
+      <settings run-config-name="Write tests for class Main" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="org.example.Main" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class MathUtils" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="untitled" />
+      <settings run-config-name="Write tests for class MathUtils" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="org.example.MathUtils" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class SocialGraph" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="untitled" />
+      <settings run-config-name="Write tests for class SocialGraph" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="org.example.SocialGraph" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for package example" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="untitled" />
+      <settings run-config-name="Write tests for package example" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="org.example" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MathUtilsDiffblueTest.testAddTwoAndThree" />
+        <item itemvalue="JUnit.MathUtilsDiffblueTest" />
+        <item itemvalue="Diffblue Cover.Write tests for package example" />
+        <item itemvalue="Diffblue Cover.Write tests for class MathUtils" />
+        <item itemvalue="Diffblue Cover.Unnamed (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d978ef2e-9bd5-4b06-a549-ea3d8c6556f1" name="Changes" comment="" />
+      <created>1786000508562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786000508562</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
