@@ -1,5 +1,19 @@
-- name: Diffblue Cover Pipeline
-  uses: diffblue/cover-github-action@v2024.04.01
-  with:
-    license-key: ${{ secrets.DIFFBLUE_LICENSE }}
-    access-token: ${{ secrets.GITHUB_TOKEN }}
+name: Diffblue Cover
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  diffblue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Diffblue Cover Pipeline
+        uses: diffblue/cover-github-action@v2024.04.01
+        with:
+          license-key: ${{ secrets.DIFFBLUE_LICENSE }}
+          access-token: ${{ secrets.GITHUB_TOKEN }}
