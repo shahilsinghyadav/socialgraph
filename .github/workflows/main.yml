@@ -5,15 +5,25 @@ on:
     branches:
       - main
 
+# Prevents multiple instances of this pipeline from modifying the branch concurrently
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   diffblue:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # Step 1: Checkout code (persisting credentials lets Diffblue commit the new unit tests)
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
+      # Step 2: Run Diffblue Cover to write or update your Java tests
       - name: Diffblue Cover Pipeline
         uses: diffblue/cover-github-action@v2024.04.01
         with:
-          license-key: ${{ secrets.DIFFBLUE_LICENSE }}
-          access-token: ${{ secrets.TOKEN }}
+          license-key: ${{ secrets.DIFFBLUE_LICENSE_KEY }}
+          access-token: ${{ secrets.DIFFBLUE_ACCESS_TOKEN }}
