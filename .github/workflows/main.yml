@@ -1,12 +1,12 @@
-name: Diffblue Cover
+name: Diffblue Cover Baseline
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Important for Diffblue to calculate code changes
+          fetch-depth: 0
           persist-credentials: true
 
       - name: Diffblue Cover Pipeline
@@ -25,3 +25,4 @@ jobs:
         with:
           license-key: ${{ secrets.DIFFBLUE_LICENSE_KEY }}
           access-token: ${{ secrets.DIFFBLUE_ACCESS_TOKEN }}
+          # Leave args out or keep it default; the licensing error happens before code generation starts
