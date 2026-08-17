@@ -4,10 +4,10 @@
   uses: diffblue/cover-github-action@v2024.04.01
   with:
     # The license key provided in your welcome email or provided by your organization. Alternatively obtain a free trial key from https://www.diffblue.com/try-cover/github.
-    license-key: {{DIFFBLUE_LICENSE}}
+    license-key: {{secrets.DIFFBLUE_LICENSE}}
     # The access token used to push commits and call GitHub APIs.
 Must have access to the project with at least Write role, and scopes including code, commit-statuses, pull-requests, workflows and actions.
-    access-token: {{TOKEN}}
+    access-token: {{secrets.TOKEN}}
     # The Diffblue Cover commands and options to use.
     args: # optional, default is ci activate build validate create
     # Working directory where the project can be found, if not at the root.
