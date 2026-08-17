@@ -6,7 +6,7 @@
     # The license key provided in your welcome email or provided by your organization. Alternatively obtain a free trial key from https://www.diffblue.com/try-cover/github.
     license-key: {{secrets.DIFFBLUE_LICENSE}}
     # The access token used to push commits and call GitHub APIs.
-#Must have access to the project with at least Write role, and scopes including code, commit-statuses, pull-requests, workflows and actions.
+    #Must have access to the project with at least Write role, and scopes including code, commit-statuses, pull-requests, workflows and actions.
     access-token: {{secrets.TOKEN}}
     # The Diffblue Cover commands and options to use.
     args: # optional, default is ci activate build validate create
