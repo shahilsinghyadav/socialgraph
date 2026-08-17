@@ -5,21 +5,28 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   diffblue:
-    runs-on: ubuntu-latest # Must stay Linux for the Docker container action
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Essential for Diffblue to trace git history
           persist-credentials: true
 
       - name: Diffblue Cover Pipeline
         uses: diffblue/cover-github-action@v2024.04.01
+        env:
+          # This safely tricks the action wrapper into baseline mode on a push event
+          DIFFBLUE_GITHUB_BASE_HEAD: ""
+          DIFFBLUE_GITHUB_OWNER_REPO_NAME: ""
+          DIFFBLUE_GITHUB_REF: ""
         with:
           license-key: ${{ secrets.DIFFBLUE_LICENSE_KEY }}
           access-token: ${{ secrets.DIFFBLUE_ACCESS_TOKEN }}
-          # Forces baseline mode and overrides the missing PR variables
-          args: --github-base-head="" --github-owner-repo-name="" --github-ref=""
