@@ -1,12 +1,12 @@
-name: Diffblue Cover Baseline
+name: Diffblue Cover
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -17,16 +17,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Essential for Diffblue to trace git history
+          fetch-depth: 0 # Important for Diffblue to calculate code changes
           persist-credentials: true
 
       - name: Diffblue Cover Pipeline
         uses: diffblue/cover-github-action@v2024.04.01
-        env:
-          # This safely tricks the action wrapper into baseline mode on a push event
-          DIFFBLUE_GITHUB_BASE_HEAD: ""
-          DIFFBLUE_GITHUB_OWNER_REPO_NAME: ""
-          DIFFBLUE_GITHUB_REF: ""
         with:
           license-key: ${{ secrets.DIFFBLUE_LICENSE_KEY }}
           access-token: ${{ secrets.DIFFBLUE_ACCESS_TOKEN }}
