@@ -19,7 +19,7 @@ jobs:
 
       # Run Diffblue Cover
       - name: Diffblue Cover
-        uses: diffblue/cover-github-action@main
+        uses: diffblue/cover-github-action/jdk21@main
         env:
           JVM_ARGS: -Xmx4096m
         with:
